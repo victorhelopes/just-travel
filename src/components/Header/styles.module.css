@@ -1,0 +1,55 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25.5px 60px;
+
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--support-5);
+}
+
+.actions img{
+    cursor: pointer;
+}
+
+.division{
+    width: 1px;
+    height: 29px;
+    background-color: var(--gray-10);
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    color: var(--brand-color-blue);
+    cursor: pointer;
+    gap: 4px;
+    font-weight: bold;
+}
+
+.shopCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 11px;
+    background-color: #0045F3;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.shopCart p {
+    color: #FFFFFF;
+    background-color: #1454F4;
+    padding: 4px 9px;
+    border-radius: 44px;
+}

@@ -1,0 +1,115 @@
+.ticketBody{
+    display: flex;
+    justify-content: space-between; 
+    background-color: var(--gray-00);
+    box-shadow: var(--shadow-s);
+    margin-top: 14px;
+    width: 100%;
+    max-width: 929px;
+    height: 233px;
+}
+
+.imageHeader{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 14px;
+    height: 0;
+    width: 100%;
+    top: 14px;
+}
+
+.imageHeader P{
+    display: table;
+    background-color: white;
+    padding: 4px 12px;
+    border-radius: 14px;
+    cursor: default;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.ratingRange{
+    margin-left: 6px;
+    margin-right: 11px;
+    color: var(--brand-color-black);
+}
+
+.ratingReviewsNumber{
+    color: var(--gray-40);
+}
+
+.ratingValue{
+    background-color: var(--brand-color-blue);
+    color: var(--gray-00);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.ticketInfos{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 33.5px 24px;
+}
+
+.generalInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 490px;
+}
+
+.priceInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.priceInfo button{
+    margin-top: 24px;
+}
+
+.division{
+    background-color: var(--gray-10);
+    height: 100%;
+    width: 1px;
+    margin-right: 24px;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.fullPrice{
+    color: var(--gray-50);
+}
+
+.discountValue{
+    display: flex;
+    align-items: start;
+}
+
+.discountValue p{
+    margin-right: 3px;
+    color:  var(--brand-color-black);
+}
+
+.discount{
+    color: var(--brand-color-blue);
+    font-weight: bold;
+}

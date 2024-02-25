@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
 import Logo from '../../../public/Logo.svg'
-import BrazilFlag from '../../assets/brazil-flag.png'
-import UserIcon from '../../assets/user.png'
-import QuestionIcon from '../../assets/message-question-checkmark.png'
-import ShopIcon from '../../assets/shop.png'
+import BrazilFlag from '../../assets/brazilFlag.svg'
+import UserIcon from '../../assets/user.svg'
+import QuestionIcon from '../../assets/message-question-checkmark.svg'
+import ShopIcon from '../../assets/shop.svg'
 
 import styles from './styles.module.css'
 
@@ -14,15 +14,15 @@ export function Header(){
             <Image  src={Logo} alt='Just-Travel logo'/>
             <div className={styles.actions}>
                 <p>Cotação dólar hoje: R$5,53</p>
-                <Image  src={BrazilFlag} alt='Just-Travel logo'/>
-                <Image  src={QuestionIcon} alt='Just-Travel logo'/>
+                <Image  src={BrazilFlag} alt='Country flag'/>
+                <Image  src={QuestionIcon} alt='Question'/>
                 <div className={styles.division}/>
                 <div className={styles.login}>
-                    <Image  src={UserIcon} alt='Just-Travel logo'/>
+                    <Image  src={UserIcon} alt='User Avatar'/>
                     <p>Entrar</p>
                 </div>
                 <div className={styles.shopCart}>
-                    <Image  src={ShopIcon} alt='Just-Travel logo'/>
+                    <Image  src={ShopIcon} alt='Cart'/>
                     <p>0</p>
                 </div>
             </div>

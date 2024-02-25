@@ -7,21 +7,40 @@
   --brand-color-green: #2BD67B;
   --brand-color-black: #0A2156;
 
+  --gray-00: #FFFFFF;
   --gray-10: #E7E9ED;
   --gray-20: #CED2DB;
   --gray-30: #B6BCC9;
+  --gray-40: #9EA5B8;
+  --gray-50: #858FA6;
 
   --support-1: #4070F4;
   --support-2: #2BD67B;
   --support-3: #FFAD0D;
   --support-4: #F03D3D;
   --support-5: #3C4C70;
+
+  --shadow-color-s: #0B1F4D08;
+  --shadow-s:0px 0px 4px var(--shadow-color-s);
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  h3{
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--brand-color-black);
+  }
+  
+  .p3{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: var(--support-5);
+  }
 }
 
 html,

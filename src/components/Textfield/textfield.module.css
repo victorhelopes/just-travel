@@ -1,0 +1,27 @@
+.textfield{
+    width: 100%;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+    border: 1px solid var(--gray-20);
+}
+
+.input input{
+    width: 100%;
+    padding: 17px 6px;
+    border: none;
+    height: 100%;
+    font-size: 16px;
+}
+
+.mapPin{
+    padding: 12px 6px 12px 12px; 
+}
+
+.svg{
+    padding: 12px; 
+    border-left: 1px solid var(--gray-20);
+}

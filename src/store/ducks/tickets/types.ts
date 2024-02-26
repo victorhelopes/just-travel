@@ -30,6 +30,7 @@ export interface IRating{
 
 export interface loadSuccess {
   tickets: Ticket[];
+  name: string;
   page: number;
 }
 

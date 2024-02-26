@@ -38,6 +38,7 @@ export class Pagination extends Component<Props>{
                         options={[1,2,3,4]} 
                         selected={page} 
                         onChange={(value)=>{
+                            console.log(name)
                             loadRequest({page: value, name, limit})
                         }}
                     />
@@ -67,6 +68,7 @@ export class Pagination extends Component<Props>{
                     <ChevronRight
                         className={page === numberOfPages[numberOfPages.length-1] ? styles.svgDisabled : styles.svgEnable}
                         onClick={()=>{
+                            console.log(name)
                             if(page !== numberOfPages[numberOfPages.length -1])
                                 loadRequest({page: page +1, name, limit})
                         }}

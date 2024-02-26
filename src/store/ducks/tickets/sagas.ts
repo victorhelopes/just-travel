@@ -9,7 +9,7 @@ export function* load(data: any){
     const { name, page, limit } = data.payload.data;
     try {
         const response:  {data: Ticket[]} = yield call(api.get, `/tickets?name=${name}&page=${page}&limit=${limit}`)
-        yield put(loadSuccess(response.data, page))
+        yield put(loadSuccess(response.data, page, name))
     }catch(err) {
         yield put(loadFailure())
     }

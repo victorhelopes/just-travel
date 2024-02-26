@@ -17,8 +17,8 @@ const reducer: Reducer<TicketState> = (state = INITIAL_STATE, action) =>{
 
         case TicketsTypes.LOAD_SUCCESS:
             const resultLoadRequest = action.payload as loadSuccess
-            const { tickets } = resultLoadRequest;
-            return { ...state, loading: false, error: false, tickets}
+            const { tickets, page } = resultLoadRequest;
+            return { ...state, loading: false, error: false, tickets, page}
 
         case TicketsTypes.LOAD_FAILURE:
             return { ...state, loading: false, error: true, data: []}

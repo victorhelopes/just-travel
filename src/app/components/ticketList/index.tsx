@@ -73,6 +73,7 @@ class TicketsList extends Component<Props>{
                                     </div>
                                 </div>
                                 <div className={styles.price}>
+
                                     <div className={styles.division}/>
                                     <div className={styles.priceInfo}>
                                         <p className={styles.fullPrice}>de {ticket.price.full} por</p>
@@ -80,7 +81,7 @@ class TicketsList extends Component<Props>{
                                             <p>R$</p>
                                             <h2 className={styles.discount}>{ticket.price.discount}</h2>
                                         </div>
-                                        <Button label="Saiba mais"/>
+                                        <Button label="Saiba mais" onClick={()=> {return;}}/>
                                     </div>
                                 </div>
                             </div>

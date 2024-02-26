@@ -2,6 +2,8 @@
   --max-width: 1100px;
   --border-radius: 12px;
 
+  --primary-color: #455CC7;
+
   --background: #F6F6F6;
   --brand-color-blue: #4070F4;
   --brand-color-green: #2BD67B;
@@ -13,6 +15,7 @@
   --gray-30: #B6BCC9;
   --gray-40: #9EA5B8;
   --gray-50: #858FA6;
+  --gray-150: #8A90BD;
 
   --support-1: #4070F4;
   --support-2: #2BD67B;

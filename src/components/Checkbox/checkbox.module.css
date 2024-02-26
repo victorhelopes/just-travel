@@ -1,0 +1,24 @@
+.checkbox input[type=checkbox]{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.checkbox input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    outline: solid 0.5px var(--gray-40); 
+    border-radius: 1px;
+    margin: 0.6px;  
+}
+
+.checkbox input[type=checkbox]:checked{
+    accent-color: var(--brand-color-black);
+}
+
+.checkbox label{
+    margin-left: 10px;
+}

@@ -9,6 +9,8 @@
   --brand-color-green: #2BD67B;
   --brand-color-black: #0A2156;
 
+  --link-color: #3570BF;
+
   --gray-00: #FFFFFF;
   --gray-10: #E7E9ED;
   --gray-20: #CED2DB;
@@ -31,6 +33,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  h2{
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--brand-color-black);
+
+  }
 
   h3{
     font-size: 22px;

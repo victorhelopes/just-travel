@@ -3,9 +3,8 @@
     justify-content: space-between; 
     background-color: var(--gray-00);
     box-shadow: var(--shadow-s);
-    margin-top: 14px;
+    margin-bottom: 14px;
     width: 100%;
-    max-width: 929px;
     height: 233px;
 }
 
@@ -101,7 +100,7 @@
 
 .discountValue{
     display: flex;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .discountValue p{

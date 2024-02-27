@@ -8,10 +8,10 @@ import { useEffect, useState } from "react"
 import styles from './id.module.css'
 import Image from "next/image";
 import SimpleMap from "@/components/map";
-import { addCartRequest, addCartSuccess, loadCartRequest } from "@/store/ducks/cart/actions";
-import { useDispatch } from "react-redux";
+import { useRouter } from "next/navigation";
 
 export default function Id({ params }: { params: { id: string } }){
+    const router = useRouter();
     const [ticketInfo, setTicketInfo] = useState<Ticket>({
         id: params.id,
         name: '',
@@ -30,8 +30,6 @@ export default function Id({ params }: { params: { id: string } }){
         updatedAt: ''
     });
 
-    const dispatch = useDispatch();
-
     useEffect(()=>{
         async function getTicketInfo(){
             try{
@@ -48,9 +46,7 @@ export default function Id({ params }: { params: { id: string } }){
     return(
         <div className={styles.ticketInfoBody}>
             <div className={styles.headerInfos}>
-                <a href="/">
-                    <Icon name="CornerUpLeft"/>
-                </a>
+                <Icon onClick={()=>{router.push('/')}} name="CornerUpLeft"/>
                 <div className={styles.nameAndLocation}>
                     <h2>{ticketInfo.name}</h2>
                     <p className="p3"> 
@@ -158,8 +154,16 @@ export default function Id({ params }: { params: { id: string } }){
                         <Button 
                             label="Comprar ingresso" 
                             onClick={()=>{
-                                dispatch(addCartSuccess(ticketInfo)); 
-                                dispatch(loadCartRequest()); 
+                                const cart = localStorage.getItem('cart')
+                                if(cart){
+                                    const newCart = JSON.parse(cart)
+                                    newCart.push(ticketInfo)
+                                    localStorage.setItem('cart', JSON.stringify(newCart))
+                                    window.location.reload();
+                                    return;
+                                }
+                                console.log(ticketInfo)
+                                localStorage.setItem('cart', JSON.stringify([ticketInfo]))
                             }}
                         />
                     </div>

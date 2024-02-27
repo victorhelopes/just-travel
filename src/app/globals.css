@@ -4,6 +4,8 @@
 
   --primary-color: #455CC7;
 
+  --brand-color-blue-darker: #0045F3;
+
   --background: #F6F6F6;
   --brand-color-blue: #4070F4;
   --brand-color-green: #2BD67B;
@@ -25,8 +27,9 @@
   --support-4: #F03D3D;
   --support-5: #3C4C70;
 
-  --shadow-color-s: #0B1F4D08;
-  --shadow-s:0px 0px 4px var(--shadow-color-s);
+  --shadow-color-s: #0b1f4d;
+
+  --shadow-s: 0px 0px 4px #0b1f4d2a;
 }
 
 * {
@@ -74,7 +77,9 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: CircularStd, Arial, Helvetica, sans-serif;
-  .container{padding: 0 6rem;}
+  .container{
+    padding: 0 6rem 6rem 6rem;
+  }
 }
 
 body {

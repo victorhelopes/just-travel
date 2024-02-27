@@ -13,6 +13,7 @@ import Location from '../../../assets/location.svg'
 
 import styles from "./styles.module.css"
 import { Button } from "@/components/Button";
+import Icon from "@/components/Icon";
 
 interface StateProps {
     tickets: Ticket[];
@@ -83,7 +84,8 @@ class TicketsList extends Component<Props>{
                                         </div>
                                         <a href={`${ticket.id}`}>
                                             <Button 
-                                                label="Saiba mais" 
+                                                label="Saiba mais"
+                                                rightIcon={<Icon name="ArrowRight"/>} 
                                                 onClick={()=> {}}/>
                                         </a>
                                     </div>

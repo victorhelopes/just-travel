@@ -34,19 +34,5 @@
 }
 
 .shopCart{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 11px;
-    background-color: #0045F3;
-    border-radius: 4px;
-    cursor: pointer;
-    gap: 6px;
-}
-
-.shopCart p {
-    color: #FFFFFF;
-    background-color: #1454F4;
-    padding: 4px 9px;
-    border-radius: 44px;
+    position: relative;
 }

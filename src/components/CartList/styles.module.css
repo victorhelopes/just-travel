@@ -1,0 +1,118 @@
+.shopCartButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 11px;
+    background-color: var(--brand-color-blue-darker);
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.cartList{
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.shopCartButton p{
+    display: flex;
+    color: #FFFFFF;
+    background-color: #1454F4;
+    padding: 4px 9px;
+    border-radius: 44px;
+}
+
+.shopCartButton svg{
+    margin-right: 6px;
+}
+
+.modalCart{
+    position: absolute;
+    top: 74px;
+    right: 0px;
+    width: 100vw;
+    max-width: 492px;
+    padding: 24px;
+    background-color: var(--gray-00);
+    box-shadow: var(--shadow-s);
+    z-index: 1;
+}
+
+.title{
+    color: #0A1E31;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.modalCart button{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.row img{
+    margin-right: 18px;
+}
+
+.priceInfos{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infos svg{
+    margin-left: 22px;
+    color: #646981;
+    cursor: pointer;
+}
+
+.infos p{
+    color: #646981;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.numberOfTickets p{
+    color: #989AA7;
+    font-weight: normal;
+}
+
+.row hr, .priceInfos hr, .ticket hr{
+    margin: 8px 0;
+}
+
+.subtotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtotalParagraph{
+    color: var(--brand-color-black);
+    font-weight: bold;
+}
+
+.totalPrice{
+    font-weight: bold;
+    color: #17191C;
+}
+
+.specialInfo{
+    color: #00919E;
+    width: fit-content;
+}
+
+.totalFooter{
+    color: var(--brand-color-blue);
+    margin-bottom: 10px;
+}

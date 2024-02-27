@@ -1,14 +1,18 @@
+'use client'
 import Image from 'next/image';
 
 import Logo from '../../../public/Logo.svg'
 import BrazilFlag from '../../assets/brazilFlag.svg'
 import UserIcon from '../../assets/user.svg'
 import QuestionIcon from '../../assets/message-question-checkmark.svg'
-import ShopIcon from '../../assets/shop.svg'
 
 import styles from './styles.module.css'
+import {CartList} from '../CartList';
+import { useState } from 'react';
 
 export function Header(){
+    const [isOpen, setIsOpen] = useState(false);
+    
     return(
         <header className={styles.header}>
             <Image  src={Logo} alt='Just-Travel logo'/>
@@ -22,8 +26,7 @@ export function Header(){
                     <p>Entrar</p>
                 </div>
                 <div className={styles.shopCart}>
-                    <Image  src={ShopIcon} alt='Cart'/>
-                    <p>0</p>
+                    <CartList isOpen={isOpen} setIsOpen={()=>{setIsOpen(!isOpen)}}/>
                 </div>
             </div>
         </header>

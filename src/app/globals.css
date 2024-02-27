@@ -47,6 +47,20 @@
     color: var(--brand-color-black);
   }
   
+  .p2{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: var(--gray-40);
+  }
+
+  .p22{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: var(--brand-color-black);
+  }
+
   .p3{
     font-size: 14px;
     line-height: 18px;
@@ -60,6 +74,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: CircularStd, Arial, Helvetica, sans-serif;
+  .container{padding: 0 6rem;}
 }
 
 body {

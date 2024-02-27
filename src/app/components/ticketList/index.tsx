@@ -35,13 +35,13 @@ class TicketsList extends Component<Props>{
         const { loadRequest, name, page, limit } = this.props;
         loadRequest({name: name, page: page, limit: limit})
     }
-
+    
 
     render(): ReactNode {  
         const {tickets} = this.props;
 
         return (
-            <>
+            <div>
                 {tickets?.map((ticket)=>{
                     return (
                         <div className={styles.ticketBody} key={ticket.id}>
@@ -81,14 +81,18 @@ class TicketsList extends Component<Props>{
                                             <p>R$</p>
                                             <h2 className={styles.discount}>{ticket.price.discount}</h2>
                                         </div>
-                                        <Button label="Saiba mais" onClick={()=> {return;}}/>
+                                        <a href={`${ticket.id}`}>
+                                            <Button 
+                                                label="Saiba mais" 
+                                                onClick={()=> {}}/>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     )
                 })}
-            </>
+            </div>
         )
     }
 }
@@ -104,4 +108,4 @@ const mapStateToProps = (state: ApplicationState) => ({
 
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators(TicketsActions, dispatch) 
 
-export default connect(mapStateToProps, mapDispatchToProps)(TicketsList)
+export default connect(mapStateToProps, mapDispatchToProps)(TicketsList);

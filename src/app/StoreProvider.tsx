@@ -1,5 +1,5 @@
 'use client'
-import { Provider } from 'react-redux'
+import { Provider, ReactReduxContext } from 'react-redux'
 import store from '../store';
 
 export default function StoreProvider({
@@ -7,5 +7,5 @@ export default function StoreProvider({
 }: {
   children: React.ReactNode
 }) {
-  return <Provider store={store}>{children}</Provider>
+  return <Provider store={store} context={ReactReduxContext}>{children}</Provider>
 }

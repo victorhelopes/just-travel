@@ -1,5 +1,5 @@
 import { Reducer } from "@reduxjs/toolkit";
-import { Ticket, TicketState, TicketsTypes, loadSuccess } from "./types";
+import { TicketState, TicketsTypes, loadSuccess } from "./types";
 
 const INITIAL_STATE: TicketState = {
     tickets: [],
@@ -18,7 +18,6 @@ const reducer: Reducer<TicketState> = (state = INITIAL_STATE, action) =>{
         case TicketsTypes.LOAD_SUCCESS:
             const resultLoadRequest = action.payload as loadSuccess
             const { tickets, page, name } = resultLoadRequest;
-            console.log(resultLoadRequest)
             return { ...state, loading: false, error: false, tickets, page, name: name || ''}
 
         case TicketsTypes.LOAD_FAILURE:

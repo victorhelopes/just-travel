@@ -5,9 +5,11 @@ import rootReducer from "./ducks/rootReducer";
 import rootSaga from "./ducks/rootSaga";
 
 import { TicketState } from "./ducks/tickets/types";
+import { CartState } from "./ducks/cart/types";
 
 export interface ApplicationState {
   tickets: TicketState;
+  cart: CartState;
 }
 
 const sagaMiddleware = CreateSagaMiddleware();

@@ -11,6 +11,7 @@ export function Button({label, variant, onClick}: IButton){
     <button 
         className={variant? styles[variant] : styles.filled}
         onClick={onClick}
+        style={{ cursor: 'pointer'}}
     >
         {label}
     </button>)

@@ -1,6 +1,7 @@
 .filterBody{
     background-color: white;
     padding: 24px;
+    width: 100%;
     max-width: 367px;
 }
 
@@ -118,4 +119,21 @@
     display: flex;
     align-items: center;
     height: 30px;
+}
+
+
+@media (max-width: 700px) {
+    .header{
+        flex-direction: column;
+    }
+
+    .filterBody section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
 }

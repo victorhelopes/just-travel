@@ -51,6 +51,7 @@
 .row{
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -61,12 +62,14 @@
 .priceInfos{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 14px;
 }
 
 .infos{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -115,4 +118,18 @@
 .totalFooter{
     color: var(--brand-color-blue);
     margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .modalCart{
+        position: absolute;
+        top: 74px;
+        right: -22px;
+        width: 100vw;
+        max-width: 492px;
+        padding: 5px;
+        background-color: var(--gray-00);
+        box-shadow: var(--shadow-s);
+        z-index: 1;
+    }
 }

@@ -92,6 +92,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 37px;
     gap: 38px;
     width: 100%;
